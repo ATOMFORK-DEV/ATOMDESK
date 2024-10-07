@@ -5,12 +5,14 @@
   "main": "ASSETS.SRC/SOURCE/JAVA/MAIN.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "dev": "nodemon --watch ASSETS.SRC -e js,html,css,sass --exec \"electron .\""
   },
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "electron": "32.1.2",
-    "electron-builder": "^24.9.1"
+    "electron": "^32.1.2",
+    "electron-builder": "^24.9.1",
+    "nodemon": "^3.0.2"
   }
 }
