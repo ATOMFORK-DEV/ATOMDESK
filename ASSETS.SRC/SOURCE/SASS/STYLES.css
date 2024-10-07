@@ -1,7 +1,80 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
   background-color: #f0f0f0;
+}
+
+#titlebar {
+  height: 26px;
+  background-color: #333;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#drag-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-app-region: drag;
+}
+
+#window-title {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+#window-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-app-region: no-drag;
+}
+
+.control-button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 6px;
+  font-size: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+#min-button {
+  background-color: #00ca4e;
+}
+
+#max-button {
+  background-color: #ffbd44;
+}
+
+#close-button {
+  background-color: #ff605c;
+}
+
+#content {
+  padding: 20px;
 }
 
 h1 {

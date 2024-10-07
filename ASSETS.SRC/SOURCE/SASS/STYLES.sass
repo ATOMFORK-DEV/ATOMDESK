@@ -1,7 +1,54 @@
 body
   font-family: Arial, sans-serif
-  padding: 20px
+  margin: 0
+  padding: 0
   background-color: #f0f0f0
+
+#titlebar
+  height: 26px  // Reduced from 28px to 24px
+  background-color: #333
+  color: #fff
+  user-select: none
+
+#drag-region
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+  -webkit-app-region: drag
+
+#window-title
+  margin-left: 10px
+  font-size: 12px  // Reduced font size further
+
+#window-controls
+  display: flex
+  -webkit-app-region: no-drag
+
+.control-button
+  width: 16px  // Reduced from 20px to 16px
+  height: 16px  // Reduced from 20px to 16px
+  border-radius: 50%
+  border: none
+  margin-right: 6px  // Reduced margin
+  font-size: 10px  // Reduced font size
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+
+#min-button
+  background-color: #00ca4e
+
+#max-button
+  background-color: #ffbd44
+
+#close-button
+  background-color: #ff605c
+
+#content
+  padding: 20px
 
 h1
   color: #333

@@ -7,13 +7,25 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 </head>
 <body>
-    <h1>Welcome to My Electron App</h1>
-    <p>This app is using:</p>
-    <ul>
-        <li>Chrome (v<span id="chrome-version"></span>)</li>
-        <li>Node.js (v<span id="node-version"></span>)</li>
-        <li>Electron (v<span id="electron-version"></span>)</li>
-    </ul>
+    <div id="titlebar">
+        <div id="drag-region">
+            <div id="window-title">My Electron App</div>
+            <div id="window-controls">
+                <button class="control-button" id="min-button"></button>
+                <button class="control-button" id="max-button"></button>
+                <button class="control-button" id="close-button"></button>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Welcome to My Electron App</h1>
+        <p>This app is using:</p>
+        <ul>
+            <li>Chrome (v<span id="chrome-version"></span>)</li>
+            <li>Node.js (v<span id="node-version"></span>)</li>
+            <li>Electron (v<span id="electron-version"></span>)</li>
+        </ul>
+    </div>
     <script src="SOURCE/JAVA/RENDERER.js"></script>
 </body>
 </html>
