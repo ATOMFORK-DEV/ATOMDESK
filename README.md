@@ -48,5 +48,6 @@ We welcome contributions from the developer community. Please see our [CONTRIBUT
 ATOMDESK is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
+---
 
-ATOMDESK - Your Development Environment, Anywhere and Everywhere!
+ATOMFORK DEVELOPMENT, ATOMDESK - Your Development Environment, Anywhere and Everywhere!
