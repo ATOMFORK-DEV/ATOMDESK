@@ -17,9 +17,18 @@ body
   height: 100%
   -webkit-app-region: drag
 
+#window-icon
+  width: 16px
+  height: 16px
+  margin-left: 10px
+  background-image: url('../../ASSETS/ICONS/FAVICONS/FAVICON.ico')
+  background-size: contain
+  background-repeat: no-repeat
+
 #window-title
   margin-left: 10px
   font-size: 12px  // Reduced font size further
+  flex-grow: 1  // Allow the title to take up remaining space
 
 #window-controls
   display: flex

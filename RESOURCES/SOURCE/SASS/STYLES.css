@@ -29,9 +29,21 @@ body {
   -webkit-app-region: drag;
 }
 
+#window-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-image: url("../../ASSETS/ICONS/FAVICONS/FAVICON.ico");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #window-title {
   margin-left: 10px;
   font-size: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #window-controls {
