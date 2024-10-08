@@ -14,7 +14,7 @@ function createWindow() {
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js')
     },
-    icon: path.join(__dirname, '..', '..', 'ASSETS', 'ICONS', 'FAVICONS', 'FAVICON.ico')
+    icon: path.join(__dirname, '..', '..', 'ASSETS', 'ICONS', 'FAVICONS', 'FAVICON1.ico')
   });
 
   mainWindow.loadFile(path.join(__dirname, '..', '..', 'INDEX.html'));
@@ -45,7 +45,7 @@ function createWindow() {
 }
 
 function createTray() {
-  tray = new Tray(path.join(__dirname, '..', '..', 'ASSETS', 'ICONS', 'FAVICONS', 'FAVICON.ico'));
+  tray = new Tray(path.join(__dirname, '..', '..', 'ASSETS', 'ICONS', 'FAVICONS', 'FAVICON1.ico'));
   const contextMenu = Menu.buildFromTemplate([
     // Removed the 'Show App' option
     { 

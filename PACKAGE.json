@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "dev": "nodemon --watch ASSETS.SRC -e js,html,css,sass --exec \"electron .\""
+    "dev": "nodemon --watch RESOURCES -e js,html,css,sass --exec \"electron .\""
   },
   "author": "Your Name",
   "license": "MIT",

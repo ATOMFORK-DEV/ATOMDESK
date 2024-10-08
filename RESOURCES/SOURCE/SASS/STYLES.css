@@ -33,9 +33,11 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 10px;
-  background-image: url("../../ASSETS/ICONS/FAVICONS/FAVICON.ico");
+  background-image: url("../../ASSETS/ICONS/FAVICONS/FAVICON2.ico");
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
 }
 
 #window-title {
@@ -74,11 +76,11 @@ body {
 }
 
 #min-button {
-  background-color: #ffbd44;
+  background-color: #ffffff;
 }
 
 #close-button {
-  background-color: #ff605c;
+  background-color: #ffffff;
   margin-right: 10px;
 }
 
