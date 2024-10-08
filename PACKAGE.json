@@ -2,7 +2,7 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "My Electron application",
-  "main": "ASSETS.SRC/SOURCE/JAVA/MAIN.js",
+  "main": "RESOURCES/SOURCE/JAVA/MAIN.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
