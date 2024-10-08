@@ -3,6 +3,9 @@ body
   margin: 0
   padding: 0
   background-color: #f0f0f0
+  height: 100vh  // Set body to full viewport height
+  display: flex
+  flex-direction: column
 
 #titlebar
   height: 26px  // Reduced from 28px to 24px
@@ -57,7 +60,17 @@ body
   margin-right: 10px  // Added extra margin to the last button
 
 #content
+  flex-grow: 1  // Allow content to take up remaining space
+  display: flex
+  flex-direction: column
+
+#content1, #content2
+  width: 100%
+  height: 100%
   padding: 20px
+  box-sizing: border-box
+  overflow-y: auto  // Add scrollbar if content exceeds height
+  background-color: silver  // Changed to silver for both content1 and content2
 
 h1
   color: #333
