@@ -5,8 +5,6 @@ document.getElementById('min-button').addEventListener('click', () => {
   window.electronAPI.minimizeWindow();
 });
 
-// Removed max-button event listener
-
 document.getElementById('close-button').addEventListener('click', () => {
   window.electronAPI.closeWindow();
 });

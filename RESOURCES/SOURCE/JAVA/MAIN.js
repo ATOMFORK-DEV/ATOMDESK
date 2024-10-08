@@ -1,7 +1,8 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron');
 const path = require('path');
 
 let mainWindow;
+let tray;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -25,6 +26,41 @@ function createWindow() {
 
   mainWindow.on('closed', function () {
     mainWindow = null;
+  });
+
+  mainWindow.on('minimize', function (event) {
+    event.preventDefault();
+    mainWindow.hide();
+  });
+
+  mainWindow.on('close', function (event) {
+    if (!app.isQuitting) {
+      event.preventDefault();
+      mainWindow.hide();
+    }
+    return false;
+  });
+
+  createTray();
+}
+
+function createTray() {
+  tray = new Tray(path.join(__dirname, '..', '..', 'ASSETS', 'ICONS', 'FAVICONS', 'FAVICON.ico'));
+  const contextMenu = Menu.buildFromTemplate([
+    // Removed the 'Show App' option
+    { 
+      label: 'Quit', click: function() {
+        app.isQuitting = true;
+        app.quit();
+      } 
+    }
+  ]);
+
+  tray.setToolTip('My Electron App');
+  tray.setContextMenu(contextMenu);
+
+  tray.on('click', () => {
+    mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show();
   });
 }
 
@@ -59,11 +95,12 @@ if (process.env.NODE_ENV === 'development') {
 
 // Add these IPC handlers for window controls
 ipcMain.on('minimize-window', () => {
-  mainWindow.minimize();
+  mainWindow.hide();
 });
 
 // Removed maximize-window IPC handler
 
 ipcMain.on('close-window', () => {
-  mainWindow.close();
+  app.isQuitting = true;
+  app.quit();
 });
