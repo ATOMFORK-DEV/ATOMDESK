@@ -26,4 +26,11 @@ document.getElementById('window-icon').addEventListener('click', () => {
   }
 });
 
+// Add context menu to titlebar icon
+document.getElementById('window-icon').addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  window.electronAPI.showTitlebarIconMenu();
+});
+
 // You can add more frontend JavaScript code here
+

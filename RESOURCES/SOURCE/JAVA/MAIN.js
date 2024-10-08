@@ -104,3 +104,18 @@ ipcMain.on('close-window', () => {
   app.isQuitting = true;
   app.quit();
 });
+
+// Add this new IPC handler for the titlebar icon context menu
+ipcMain.on('show-titlebar-icon-menu', (event) => {
+  const template = [
+    { 
+      label: 'Quit', 
+      click: () => {
+        app.isQuitting = true;
+        app.quit();
+      } 
+    }
+  ];
+  const menu = Menu.buildFromTemplate(template);
+  menu.popup({ window: mainWindow });
+});
