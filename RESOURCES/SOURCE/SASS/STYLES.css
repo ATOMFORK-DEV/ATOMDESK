@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: transparent;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +112,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: auto;
-  background-color: silver;
+  background-color: rgba(192, 192, 192, 0.8);
 }
 
 h1 {

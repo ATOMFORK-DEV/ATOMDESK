@@ -6,9 +6,11 @@ let tray;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
+    width: 400,
     height: 600,
     frame: false, // Make the window frameless
+    resizable: false, // Make the window not resizable
+    transparent: true, // Make the window transparent
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
