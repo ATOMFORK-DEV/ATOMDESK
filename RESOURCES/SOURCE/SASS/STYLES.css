@@ -46,7 +46,7 @@ body {
   height: 16px;
   border-radius: 50%;
   border: none;
-  margin-right: 6px;
+  margin-right: 8px;
   font-size: 10px;
   color: #fff;
   display: -webkit-box;
@@ -62,15 +62,12 @@ body {
 }
 
 #min-button {
-  background-color: #00ca4e;
-}
-
-#max-button {
   background-color: #ffbd44;
 }
 
 #close-button {
   background-color: #ff605c;
+  margin-right: 10px;
 }
 
 #content {
