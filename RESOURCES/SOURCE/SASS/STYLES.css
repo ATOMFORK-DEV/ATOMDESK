@@ -15,7 +15,7 @@ body {
 
 #titlebar {
   height: 26px;
-  background-color: #333;
+  background-color: #222222;
   color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -112,7 +112,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: auto;
-  background-color: rgba(192, 192, 192, 0.8);
+  background-color: #C0C0C0;
 }
 
 h1 {
